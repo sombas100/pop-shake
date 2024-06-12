@@ -27,7 +27,7 @@ const NavBar = () => {
       </Navbar.Collapse>
       <div className="flex md:order-2">
         <Button
-          style={{ borderRadius: "40px" }}
+          style={{ borderRadius: "40px", marginRight: "10px" }}
           size="lg"
           gradientMonochrome="lime"
         >

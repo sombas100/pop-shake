@@ -46,6 +46,24 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="motivation-container">
+          <div className="motivation-description">
+            <img
+              className="motivation-image"
+              src="/pretzalcake.jpg"
+              alt="pretzal cake"
+            />
+            <div className="overlay-box">
+              <h2 className="overlay-title">Improve your skills</h2>
+              <p className="overlay-text">
+                Become confident in your cooking skills by following our range
+                of recipes!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
