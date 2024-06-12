@@ -1,83 +1,123 @@
-
-
 .banner {
     background-size: cover;
     background-position: center;
     height: 40vh;
     margin-top: 30px;
-  }
-  
-  .icons-container {
+}
+
+.icons-container {
     height: 40vh;
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
-    justify-content: space-around; /* Distributes space evenly between the icons */
-    align-items: center; /* Centers icons vertically within the container */
-  }
-  
-  .detail-icons {
-    max-width: 100px; /* Adjust as necessary */
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.detail-icons {
+    max-width: 100px;
     height: auto;
     margin-left: 20px;
-    
-  }
-  
-  .quote {
-    text-align: center; /* Centers the text under each icon */
-    font-style: italic; /* Optional: makes the text italic */
-    color: #555; /* Adjust the color as needed */
-      
-  }
+}
 
-  .motivation-container {
+.quote {
+    text-align: center; 
+    font-style: italic; 
+    color: #555; 
+}
+
+.motivation-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+}
 
-  .motivation-image {
-    height: 40vh;
-    width: 800px;
+.motivation-image {
+    height: 50vh;
+    width: 90vw;
+    max-width: 800px;
     margin-right: 190px;
-    
-  }
+    padding-bottom: 15px;
+}
 
-  .overlay-box {
-    height: 45%;
-    width: 25%;
+.overlay-box {
     position: absolute;
     top: 35%;
-    left: 15%;
-    
+    left: 34%;
+    transform: translate(-30%, -35%);
     background-color: white;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0 ,0.1);
-  }
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; 
+    text-align: center; 
+    box-sizing: border-box; 
+}
 
-  .overlay-title {
+.overlay-title {
     font-size: 24px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 19px;
-  }
+}
 
-  .overlay-text {
+.overlay-text {
     margin: 0;
-    text-align: center;
     color: #333;
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
 
-  @media screen and (max-width: 836px) {
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20%;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
     .icons-container {
         flex-direction: column;
         align-items: center;
     }
+
     .icon-with-quote {
-        width: 100%;
+        width: 70%;
         margin: 10px 0;
     }
-  }
+
+    .overlay-box {
+        width: 50%;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 10px; 
+    }
+
+    .overlay-title {
+        font-size: 18px; 
+    }
+
+    .overlay-text {
+        font-size: 14px; 
+    }
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .overlay-box {
+        width: 60%; 
+        padding: 15px; 
+    }
+
+    .overlay-title {
+        font-size: 20px; 
+    }
+
+    .overlay-text {
+        font-size: 16px;
+    }
+}

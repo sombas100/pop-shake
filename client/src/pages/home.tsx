@@ -64,6 +64,14 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      <section className="info-container">
+        <div className="info-content">
+          <div className="info-item">
+            <h2>Fall in love with the kitchen</h2>
+            <p>Discover new and exciting recipes to try</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
