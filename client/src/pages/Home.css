@@ -1,0 +1,41 @@
+/* src/Home.css */
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    margin-top: 30px;
+  }
+  
+  .icons-container {
+    height: 40vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between the icons */
+    align-items: center; /* Centers icons vertically within the container */
+  }
+  
+  .detail-icons {
+    max-width: 100px; /* Adjust as necessary */
+    height: auto;
+    margin-left: 20px;
+    
+  }
+  
+  .quote {
+    text-align: center; /* Centers the text under each icon */
+    font-style: italic; /* Optional: makes the text italic */
+    color: #555; /* Adjust the color as needed */
+      
+  }
+
+  @media screen and (max-width: 836px) {
+    .icons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-with-quote {
+        width: 100%;
+        margin: 10px 0;
+    }
+  }

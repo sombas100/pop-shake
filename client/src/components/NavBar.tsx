@@ -15,13 +15,13 @@ const NavBar = () => {
         />
       </Navbar.Brand>
       <Navbar.Collapse>
-        <Navbar.Link className="navbar-links" href="#" active>
+        <Navbar.Link className="navbar-links" href="/">
           Home
         </Navbar.Link>
-        <Navbar.Link className="navbar-links" href="#">
+        <Navbar.Link className="navbar-links" href="/about">
           About
         </Navbar.Link>
-        <Navbar.Link className="navbar-links" href="#">
+        <Navbar.Link className="navbar-links" href="/recipes">
           Recipes
         </Navbar.Link>
       </Navbar.Collapse>

@@ -12,6 +12,9 @@ import "./App.css";
 import SearchBar from "./components/SearchBar";
 import NavBar from "./components/NavBar";
 import RecipeList from "./components/RecipeList";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Recipes from "./pages/Recipes";
 
 function App() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -32,8 +35,9 @@ function App() {
       <SearchBar onSearch={handleSearch} />
       <RecipeList recipes={recipes} />
       <Routes>
-        <Route path="#"></Route>
-        <Route path="#"></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/recipes" element={<Recipes recipes={recipes} />}></Route>
       </Routes>
     </BrowserRouter>
   );
