@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Navbar } from "flowbite-react";
 import { IoIosSearch } from "react-icons/io";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
@@ -9,16 +10,20 @@ const NavBar = () => {
         <img
           style={{ marginLeft: "30%" }}
           src="/popshake.png"
-          className="mr-3 h-8 sm:h-9"
+          className="mr-3 h-9 sm:h-9"
           alt="Pop shake logo"
         />
       </Navbar.Brand>
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>
+        <Navbar.Link className="navbar-links" href="#" active>
           Home
         </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Recipes</Navbar.Link>
+        <Navbar.Link className="navbar-links" href="#">
+          About
+        </Navbar.Link>
+        <Navbar.Link className="navbar-links" href="#">
+          Recipes
+        </Navbar.Link>
       </Navbar.Collapse>
       <div className="flex md:order-2">
         <Button

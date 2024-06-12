@@ -11,6 +11,7 @@ import {
 import "./App.css";
 import SearchBar from "./components/SearchBar";
 import NavBar from "./components/NavBar";
+import RecipeList from "./components/RecipeList";
 
 function App() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -29,8 +30,9 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <SearchBar onSearch={handleSearch} />
+      <RecipeList recipes={recipes} />
       <Routes>
-        <Route path="/"></Route>
+        <Route path="#"></Route>
         <Route path="#"></Route>
       </Routes>
     </BrowserRouter>
