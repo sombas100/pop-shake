@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .banner {
     background-size: cover;
     background-position: center;
@@ -39,7 +41,9 @@
     width: 90vw;
     max-width: 800px;
     margin-right: 190px;
-    padding-bottom: 15px;
+    margin-bottom: 35px;
+    padding-bottom: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-box {
@@ -70,12 +74,59 @@
 }
 
 .info-container {
+    max-width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 20%;
     margin-bottom: 30px;
 }
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-item {
+    width: 35%; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.info-item h2{
+    font-size: 24px;
+    font-style: italic;
+    color: #555;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.info-item p {
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 5%;
+}
+
+.info-item img {
+    max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+ 
+}
+
+.info-item:nth-child(3) img {
+    margin-top: 40px;
+}
+
+.info-item:nth-child(2) p {
+    margin-top: 60px; 
+  }
 
 
 @media screen and (max-width: 768px) {
@@ -103,6 +154,16 @@
 
     .overlay-text {
         font-size: 14px; 
+    }
+
+    .info-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info-item {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 

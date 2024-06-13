@@ -69,6 +69,17 @@ const Home: React.FC = () => {
           <div className="info-item">
             <h2>Fall in love with the kitchen</h2>
             <p>Discover new and exciting recipes to try</p>
+            <img src="cuisine1.jpg" alt="cuisine" />
+          </div>
+          <div className="info-item">
+            <h2>Completely free</h2>
+            <img src="cuisine2.jpg" alt="cuisine" />
+            <p>Quick access with no need to signup</p>
+          </div>
+          <div className="info-item">
+            <h2>Join the community</h2>
+            <p>Let us know how each dish turned out!</p>
+            <img src="cuisine3.jpg" alt="cuisine" />
           </div>
         </div>
       </section>
