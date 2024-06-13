@@ -1,0 +1,24 @@
+/* Body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+  }
+  
+  
+  .main-content {
+    flex: 1; 
+  }
+  
+  
+  Footer {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    
+  }
+  

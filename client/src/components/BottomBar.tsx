@@ -7,10 +7,11 @@ import {
   BsInstagram,
   BsTwitter,
 } from "react-icons/bs";
+import "./BottomBar.css";
 
 const BottomBar = () => {
   return (
-    <Footer container className="bg-gray-800 text-gray-100">
+    <Footer container className="bg-gray-800 text-gray-100 mt-6 bottom-0">
       <div className="w-full">
         <div className="flex justify-between items-center flex-wrap py-6">
           <Footer.Brand

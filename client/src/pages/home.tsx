@@ -57,8 +57,8 @@ const Home: React.FC = () => {
             <div className="overlay-box">
               <h2 className="overlay-title">Improve your skills</h2>
               <p className="overlay-text">
-                Become confident in your cooking skills by following our range
-                of recipes!
+                Become confident in your cooking skills by following our wide
+                range of recipes!
               </p>
             </div>
           </div>

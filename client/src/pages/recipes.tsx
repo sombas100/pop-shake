@@ -8,7 +8,7 @@ interface RecipesProps {
 
 const Recipes: React.FC<RecipesProps> = ({ recipes }) => {
   return (
-    <div>
+    <div className="recipes-page">
       <RecipeList recipes={recipes} />
     </div>
   );

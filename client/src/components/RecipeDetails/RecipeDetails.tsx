@@ -16,7 +16,6 @@ const RecipeDetails: React.FC<RecipeDetailsProps> = ({ recipe }) => {
         <h2 style={{ fontWeight: "650" }}>{recipe.label}</h2>
         <p>{recipe.source}</p>
         <p className="recipe-description">{recipe.cuisineType}</p>
-        <p>Calories: ({recipe.calories})</p>
       </div>
       <Button gradientMonochrome="info" className="recipe-button">
         <a href={recipe.url} target="_blank" rel="noopener noreferrer">

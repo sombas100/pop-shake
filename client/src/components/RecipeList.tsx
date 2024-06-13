@@ -8,7 +8,7 @@ interface RecipeListProps {
 
 const RecipeList: React.FC<RecipeListProps> = ({ recipes }) => {
   return (
-    <div>
+    <div className="recipe-list">
       {recipes.map((recipe) => (
         <RecipeDetails key={recipe.url} recipe={recipe} />
       ))}

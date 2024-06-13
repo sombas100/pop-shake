@@ -48,11 +48,11 @@
 
 .overlay-box {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 34%;
     transform: translate(-30%, -35%);
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     word-wrap: break-word; 
     text-align: center; 
@@ -117,17 +117,23 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
- 
+  align-items: center;
 }
 
-.info-item:nth-child(3) img {
-    margin-top: 40px;
-}
+
+.info-item:nth-child(1) img {
+    margin-top: 55px; 
+    margin-left: 20px;
+    }
 
 .info-item:nth-child(2) p {
     margin-top: 60px; 
-  }
-
+    }
+    
+    .info-item:nth-child(3) img {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
 
 @media screen and (max-width: 768px) {
     .icons-container {
@@ -163,6 +169,7 @@
 
     .info-item {
         width: 100%;
+        height: auto;
         margin-bottom: 20px;
     }
 }
