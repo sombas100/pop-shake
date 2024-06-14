@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { Recipe } from "./types";
-import axios from "axios";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import SearchBar from "./components/SearchBar";
@@ -31,7 +26,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <Router>
       <NavBar />
       <SearchBar onSearch={handleSearch} />
       <RecipeList recipes={recipes} />
@@ -40,7 +35,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
       </Routes>
       <BottomBar />
-    </BrowserRouter>
+    </Router>
   );
 }
 
