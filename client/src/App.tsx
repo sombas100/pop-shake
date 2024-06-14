@@ -14,7 +14,7 @@ import NavBar from "./components/NavBar";
 import RecipeList from "./components/RecipeList";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Recipes from "./pages/Recipes";
+
 import BottomBar from "./components/BottomBar";
 
 function App() {
@@ -38,7 +38,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/recipes" element={<Recipes recipes={recipes} />}></Route>
       </Routes>
       <BottomBar />
     </BrowserRouter>

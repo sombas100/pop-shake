@@ -6,7 +6,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <Navbar style={{ marginTop: "25px" }} fluid rounded>
-      <Navbar.Brand href="https://flowbite-react.com">
+      <Navbar.Brand href="/">
         <img
           style={{ marginLeft: "30%" }}
           src="/popshake.png"
@@ -20,9 +20,6 @@ const NavBar = () => {
         </Navbar.Link>
         <Navbar.Link className="navbar-links" href="/about">
           About
-        </Navbar.Link>
-        <Navbar.Link className="navbar-links" href="/recipes">
-          Recipes
         </Navbar.Link>
       </Navbar.Collapse>
       <div className="flex md:order-2">
