@@ -21,6 +21,9 @@ const NavBar = () => {
         <Navbar.Link className="navbar-links" href="/about">
           About
         </Navbar.Link>
+        <Navbar.Link className="navbar-links" href="/donate">
+          Donate
+        </Navbar.Link>
       </Navbar.Collapse>
       <div className="flex md:order-2">
         <Button
